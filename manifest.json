@@ -2,7 +2,25 @@
   "manifest_version": 3,
   "name": "HalMatAtcoderExtension",
   "version": "0.0.1",
+  "description": "Next problem may be easier than this page.",
   "action": {
-    "default_popup": "index.html"
-  }
+    "default_title": "HalMatAtcoderExtension"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://atcoder.jp/contests/abc*/tasks/abc*_*"
+      ],
+      "js": [
+        "src/ts/alert.ts"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://atcoder.jp/"
+  ]
 }
