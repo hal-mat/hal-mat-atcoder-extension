@@ -20,3 +20,8 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 ## D問題を解こうとした時に「E問題のほうがAC数多いけどいいのか？」って確認するだけのchrome拡張
 
 <https://zenn.dev/iwatos/scraps/4e150827d8fac4>
+<https://www.memory-lovers.blog/entry/2022/11/22/163000>
+<https://www.memory-lovers.blog/entry/2022/11/23/170000>
+<https://www.memory-lovers.blog/entry/2022/12/03/211848>
+<https://www.memory-lovers.blog/entry/2023/01/14/150000>
+<https://www.memory-lovers.blog/entry/2023/01/14/150000>
