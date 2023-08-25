@@ -2,6 +2,7 @@
   "name": "hal-mat-atcoder-extension",
   "private": true,
   "version": "0.0.0",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
