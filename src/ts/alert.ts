@@ -58,9 +58,9 @@ if (alertProblemAssignments.includes(nowProblemAssignment)) {
 				}
 			}
 			if (nowProblemAcCount < nextProblemAcCount) {
-				alert("The next Problem may be easier than this one!\nThis Problem AC:" + nowProblemAcCount + "\nNext Problem AC" + nextProblemAcCount);
+				alert("The next Problem may be easier than this one!\nThis Problem AC: " + nowProblemAcCount + "\nNext Problem AC: " + nextProblemAcCount);
 			} else if (nowProblemAcCount * 0.9 < nextProblemAcCount) {
-				alert("The next Problem may be about as difficult as this one.\nThis Problem AC: " + nowProblemAcCount + "\nNext Problem AC" + nextProblemAcCount);
+				alert("The next Problem may be about as difficult as this one.\nThis Problem AC: " + nowProblemAcCount + "\nNext Problem AC: " + nextProblemAcCount);
 			}
 		}).catch((error) => {
 			console.log(error.status);
