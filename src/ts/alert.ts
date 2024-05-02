@@ -1,3 +1,16 @@
+//  Copyright 2024 hal-mat
+
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+
+//  http://www.apache.org/licenses/LICENSE-2.0
+
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
 import axios from 'axios';
 type TaskResult = {
 	Score: number
@@ -19,7 +32,6 @@ const alertProblemAssignments: Array<string> = ["c", "d", "e"];
 if (alertProblemAssignments.includes(nowProblemAssignment)) {
 	const contestName: string = nowUrl.split("/")[4];
 	const nextProblemAssignment: string = String.fromCharCode(nowUrl.slice(-1).charCodeAt(0) + 1);
-	// 元々600秒置きにしたかったのだが、bit演算考えるとこっちの方が早そうなので512kでいいや
 	const checkAcCount = () => axios
 		.get('https://atcoder.jp/contests/' + contestName + '/standings/json')
 		.then((result) => {
@@ -68,6 +80,7 @@ if (alertProblemAssignments.includes(nowProblemAssignment)) {
 		});
 
 	checkAcCount();
+	// 元々600秒置きにしたかったのだが、bit演算考えるとこっちの方が早そうなので512kでいいや
 	const IntervalMiliSecond: number = 1 << 19;
 	console.log(IntervalMiliSecond);
 	setInterval(checkAcCount, IntervalMiliSecond)

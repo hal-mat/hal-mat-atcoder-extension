@@ -36,7 +36,15 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-# license-checker --summary
+## Copyright
+
+This repository is licensed under the Apache License, Version2.0.
+See ./LICENSE
+
+Guard object of logger for debugging.
+Copyright (c) 2024 hal-mat <https://github.com/hal-mat>
+
+### license-checker --summary
 
 - MIT: 90
 - ISC: 9
