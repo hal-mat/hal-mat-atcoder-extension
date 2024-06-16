@@ -44,7 +44,6 @@ if (alertProblemAssignments.includes(nowProblemAssignment)) {
 			let nextProblemScore: number = 0;
 			let nextProblemAcCount: number = 0;
 			for (const user of users) {
-				// console.log([nowProblemAcCount, nextProblemAcCount]);
 				// 現ユーザーの合計点
 				let totalScore: number = user.TotalResult.Score;
 				// 合計点が達していないということはこの問題には間違いなく正解していないし、次の問題にも正解していないユーザーまで来たら中断
@@ -69,6 +68,7 @@ if (alertProblemAssignments.includes(nowProblemAssignment)) {
 					}
 				}
 			}
+			console.log([nowProblemAcCount, nextProblemAcCount]);
 			if (nowProblemAcCount < nextProblemAcCount) {
 				alert("The next Problem may be easier than this one!\nThis Problem AC: " + nowProblemAcCount + "\nNext Problem AC: " + nextProblemAcCount);
 			} else if (nowProblemAcCount * 0.9 < nextProblemAcCount) {
