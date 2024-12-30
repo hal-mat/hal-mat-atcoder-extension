@@ -1,8 +1,7 @@
 {
   "name": "hal-mat-atcoder-extension",
   "private": true,
-  "version": "0.0.1",
-  "license": "MIT",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -20,6 +19,6 @@
     "@vitejs/plugin-vue": "^4.2.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
-    "vue-tsc": "^1.8.5"
+    "vue-tsc": "^2.2.0"
   }
 }
